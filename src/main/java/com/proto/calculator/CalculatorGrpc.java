@@ -18,8 +18,8 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.15.0-SNAPSHOT)",
-    comments = "Source: proto/calculator/calculator.proto")
+    value = "by gRPC proto compiler (version 1.12.0)",
+    comments = "Source: calculator/calculator.proto")
 public final class CalculatorGrpc {
 
   private CalculatorGrpc() {}
@@ -27,16 +27,22 @@ public final class CalculatorGrpc {
   public static final String SERVICE_NAME = "calculator.Calculator";
 
   // Static method descriptors that strictly reflect the proto.
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getAdditionMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> METHOD_ADDITION = getAdditionMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getAdditionMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "Addition",
-      requestType = com.proto.calculator.InputNumber.class,
-      responseType = com.proto.calculator.OutputNumber.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getAdditionMethod() {
+    return getAdditionMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> getAdditionMethodHelper() {
     io.grpc.MethodDescriptor<com.proto.calculator.InputNumber, com.proto.calculator.OutputNumber> getAdditionMethod;
     if ((getAdditionMethod = CalculatorGrpc.getAdditionMethod) == null) {
       synchronized (CalculatorGrpc.class) {
@@ -58,17 +64,22 @@ public final class CalculatorGrpc {
      }
      return getAdditionMethod;
   }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSubractionMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> METHOD_SUBRACTION = getSubractionMethodHelper();
 
   private static volatile io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getSubractionMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "Subraction",
-      requestType = com.proto.calculator.InputNumber.class,
-      responseType = com.proto.calculator.OutputNumber.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getSubractionMethod() {
+    return getSubractionMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> getSubractionMethodHelper() {
     io.grpc.MethodDescriptor<com.proto.calculator.InputNumber, com.proto.calculator.OutputNumber> getSubractionMethod;
     if ((getSubractionMethod = CalculatorGrpc.getSubractionMethod) == null) {
       synchronized (CalculatorGrpc.class) {
@@ -90,17 +101,22 @@ public final class CalculatorGrpc {
      }
      return getSubractionMethod;
   }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getMultiplyMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> METHOD_MULTIPLY = getMultiplyMethodHelper();
 
   private static volatile io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getMultiplyMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "Multiply",
-      requestType = com.proto.calculator.InputNumber.class,
-      responseType = com.proto.calculator.OutputNumber.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getMultiplyMethod() {
+    return getMultiplyMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> getMultiplyMethodHelper() {
     io.grpc.MethodDescriptor<com.proto.calculator.InputNumber, com.proto.calculator.OutputNumber> getMultiplyMethod;
     if ((getMultiplyMethod = CalculatorGrpc.getMultiplyMethod) == null) {
       synchronized (CalculatorGrpc.class) {
@@ -122,17 +138,22 @@ public final class CalculatorGrpc {
      }
      return getMultiplyMethod;
   }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDivideMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> METHOD_DIVIDE = getDivideMethodHelper();
 
   private static volatile io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getDivideMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "Divide",
-      requestType = com.proto.calculator.InputNumber.class,
-      responseType = com.proto.calculator.OutputNumber.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
       com.proto.calculator.OutputNumber> getDivideMethod() {
+    return getDivideMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.proto.calculator.InputNumber,
+      com.proto.calculator.OutputNumber> getDivideMethodHelper() {
     io.grpc.MethodDescriptor<com.proto.calculator.InputNumber, com.proto.calculator.OutputNumber> getDivideMethod;
     if ((getDivideMethod = CalculatorGrpc.getDivideMethod) == null) {
       synchronized (CalculatorGrpc.class) {
@@ -186,55 +207,55 @@ public final class CalculatorGrpc {
      */
     public void addition(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
-      asyncUnimplementedUnaryCall(getAdditionMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getAdditionMethodHelper(), responseObserver);
     }
 
     /**
      */
     public void subraction(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
-      asyncUnimplementedUnaryCall(getSubractionMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSubractionMethodHelper(), responseObserver);
     }
 
     /**
      */
     public void multiply(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
-      asyncUnimplementedUnaryCall(getMultiplyMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getMultiplyMethodHelper(), responseObserver);
     }
 
     /**
      */
     public void divide(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
-      asyncUnimplementedUnaryCall(getDivideMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDivideMethodHelper(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getAdditionMethod(),
+            getAdditionMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
                 com.proto.calculator.InputNumber,
                 com.proto.calculator.OutputNumber>(
                   this, METHODID_ADDITION)))
           .addMethod(
-            getSubractionMethod(),
+            getSubractionMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
                 com.proto.calculator.InputNumber,
                 com.proto.calculator.OutputNumber>(
                   this, METHODID_SUBRACTION)))
           .addMethod(
-            getMultiplyMethod(),
+            getMultiplyMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
                 com.proto.calculator.InputNumber,
                 com.proto.calculator.OutputNumber>(
                   this, METHODID_MULTIPLY)))
           .addMethod(
-            getDivideMethod(),
+            getDivideMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
                 com.proto.calculator.InputNumber,
@@ -267,7 +288,7 @@ public final class CalculatorGrpc {
     public void addition(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getAdditionMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getAdditionMethodHelper(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -275,7 +296,7 @@ public final class CalculatorGrpc {
     public void subraction(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSubractionMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getSubractionMethodHelper(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -283,7 +304,7 @@ public final class CalculatorGrpc {
     public void multiply(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getMultiplyMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getMultiplyMethodHelper(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -291,7 +312,7 @@ public final class CalculatorGrpc {
     public void divide(com.proto.calculator.InputNumber request,
         io.grpc.stub.StreamObserver<com.proto.calculator.OutputNumber> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDivideMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getDivideMethodHelper(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -317,28 +338,28 @@ public final class CalculatorGrpc {
      */
     public com.proto.calculator.OutputNumber addition(com.proto.calculator.InputNumber request) {
       return blockingUnaryCall(
-          getChannel(), getAdditionMethod(), getCallOptions(), request);
+          getChannel(), getAdditionMethodHelper(), getCallOptions(), request);
     }
 
     /**
      */
     public com.proto.calculator.OutputNumber subraction(com.proto.calculator.InputNumber request) {
       return blockingUnaryCall(
-          getChannel(), getSubractionMethod(), getCallOptions(), request);
+          getChannel(), getSubractionMethodHelper(), getCallOptions(), request);
     }
 
     /**
      */
     public com.proto.calculator.OutputNumber multiply(com.proto.calculator.InputNumber request) {
       return blockingUnaryCall(
-          getChannel(), getMultiplyMethod(), getCallOptions(), request);
+          getChannel(), getMultiplyMethodHelper(), getCallOptions(), request);
     }
 
     /**
      */
     public com.proto.calculator.OutputNumber divide(com.proto.calculator.InputNumber request) {
       return blockingUnaryCall(
-          getChannel(), getDivideMethod(), getCallOptions(), request);
+          getChannel(), getDivideMethodHelper(), getCallOptions(), request);
     }
   }
 
@@ -365,7 +386,7 @@ public final class CalculatorGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.OutputNumber> addition(
         com.proto.calculator.InputNumber request) {
       return futureUnaryCall(
-          getChannel().newCall(getAdditionMethod(), getCallOptions()), request);
+          getChannel().newCall(getAdditionMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -373,7 +394,7 @@ public final class CalculatorGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.OutputNumber> subraction(
         com.proto.calculator.InputNumber request) {
       return futureUnaryCall(
-          getChannel().newCall(getSubractionMethod(), getCallOptions()), request);
+          getChannel().newCall(getSubractionMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -381,7 +402,7 @@ public final class CalculatorGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.OutputNumber> multiply(
         com.proto.calculator.InputNumber request) {
       return futureUnaryCall(
-          getChannel().newCall(getMultiplyMethod(), getCallOptions()), request);
+          getChannel().newCall(getMultiplyMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -389,7 +410,7 @@ public final class CalculatorGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.OutputNumber> divide(
         com.proto.calculator.InputNumber request) {
       return futureUnaryCall(
-          getChannel().newCall(getDivideMethod(), getCallOptions()), request);
+          getChannel().newCall(getDivideMethodHelper(), getCallOptions()), request);
     }
   }
 
@@ -492,10 +513,10 @@ public final class CalculatorGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new CalculatorFileDescriptorSupplier())
-              .addMethod(getAdditionMethod())
-              .addMethod(getSubractionMethod())
-              .addMethod(getMultiplyMethod())
-              .addMethod(getDivideMethod())
+              .addMethod(getAdditionMethodHelper())
+              .addMethod(getSubractionMethodHelper())
+              .addMethod(getMultiplyMethodHelper())
+              .addMethod(getDivideMethodHelper())
               .build();
         }
       }
